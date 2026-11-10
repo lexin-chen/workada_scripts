@@ -4,7 +4,7 @@ from rdkit import Chem
 from rdkit.Chem import AllChem, rdCIPLabeler
 
 SMILES = "CC[C@H](C)[C@H](Br)[C@H](O)CC(C)=O"
-NAME = "analog"
+NAME = "analog1"
 
 mol = Chem.AddHs(Chem.MolFromSmiles(SMILES))
 cids = AllChem.EmbedMultipleConfs(mol, 100, randomSeed=7)
